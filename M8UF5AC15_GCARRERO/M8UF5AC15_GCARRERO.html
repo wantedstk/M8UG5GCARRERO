@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="cat">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulari d'enviament</title>
+        <script type="text/javascript">
+            function validar(){
+                var psswd=document.getElementById("passwd").value;
+                var confpsswd=document.getElementById("confpsswd").value;
+                if (psswd=confpsswd) {
+                    return true;
+                }
+                else{
+                    alert("No coincideix");
+                    return false;
+                }
+            }
+            </script>
+    </head>
+    <body style="font-family:Verdana;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;">
+        
+        <form action="mailto:gabriel.carrero@inslapineda.cat" method="post" onsubmit="return validar();">
+                <table width="91%" bgcolor="#306090" cellspacing="0" cellpadding="6">
+                    <tr>
+                        <th align="left">
+                            <h3><font color="FFFFFF">Enviar missatge</font></h3>
+                        <img src="img/gb_reload_s.gif" align="right" alt="No carrega la imatge">
+                        </th>
+                    </tr>
+                </table>
+                <table style="background-color: #EFEFEF">
+                    <tr>
+                        <td>
+                            
+                                <label>Nom:</label>
+                                <input type="text" name="nom" maxlength="50" size="50">
+                                <p></p>
+                                <label>E-Mail:</label>
+                                <input type="email" name="email" maxlength="50" size="50">
+                                <p></p>
+                                <label>Arxiu:</label>
+                                <input type="file" name="arxiu" size="50">
+                                <p></p>
+                                <label>Imatge:</label>
+                                <input type="file" name="imatge" size="50">
+                                <p>El tamany de l'arxiu i la imatge no pot excedir els 4 Kbytes</p>
+                            
+                            
+                                Requereixo resposta:
+                                <input type="radio" name="resposta" value="Sí">Sí
+                                <input type="radio" name="resposta" value="No">No
+                                <p></p>
+                                <p></p>
+                                <label>Missatge</label>
+                                 <p></p>
+                                <textarea name="missatge" rows="5" cols="45">Escriu el teu missatge</textarea>
+                                <p></p>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Usuari:</label>
+                            <input type="text" method="usuari" maxlength="8" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Contrasenya:</label>
+                            <input type="password" method="psswd" id="psswd" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Repetició de la contrasenya:</label>
+                            <input type="password" method="psswd" id="confpsswd" required onsubmit="return validar">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Quins jocs t'interessen?</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="sims" id="check">Sims 4
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="lol" id="check">League of Legends
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="smite" id="check">Smite
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="ow" id="check">Overwatch
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+    </body>
+</html>

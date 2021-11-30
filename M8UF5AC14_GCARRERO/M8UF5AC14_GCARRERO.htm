@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari 1 d'enregistrament</title>
+</head>
+
+<body>
+    <h1>Formulari bàsic de registre</h1>
+<!--NOM-->
+    <p>NOM:
+    <input type="text" maxlength="50">
+<!--COGNOM-->
+    COGNOM:
+    <input type="text" maxlength="50">
+    </p>
+<!--Sexe-->
+    <p>Sexe:
+        <input type="radio" name="sexe" value="home">Home
+        <input type="radio" name="sexe" value="dona">Dona
+    </p>
+<!--CORREU-->
+<p>Correu:
+    <input type="text" maxlength="50">
+</p>
+<!--POBLACIÓ-->
+    <p>POBLACIÓ</p>
+    <select name="Població">
+        <option selected value="1">Arbúcies</option>
+        <option selected value="1">Badalona</option>
+        <option selected value="1">Barcelona</option>
+        <option selected value="1">Girona</option>
+        <option selected value="1">Vilassar de Mar</option>
+    </select>
+<!--DESCRIPCIÓ-->
+    <p>DESCRIPCIÓ</p>
+    <textarea name="comentarios" rows="10" cols="40"></textarea>
+    <p> Vull rebre informació sobre novetats i ofertes.<input type="checkbox" checked> </p>
+    <p> Declaro haver llegit i acceptar les condicions generals del problema i la normativa sobre protecció de dades
+        indicada al RGPD.<input type="checkbox"></p>
+    <form action="" method="GET">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
